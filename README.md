@@ -66,12 +66,14 @@ cd cellphone-detection-yolov5s
 Install dependencies:
 pip install -r requirements.txt
 🚀 Running Inference
+
 Option 1: Using PyTorch (.pt file)
 import torch
 
 model = torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5s.pt')
 results = model('test_image.jpg')
 results.show()
+
 Option 2: Using ONNX (OpenCV-DNN)
 import cv2
 
